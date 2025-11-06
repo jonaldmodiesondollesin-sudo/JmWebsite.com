@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      font-family: 'Poppins', sans-serif;
+      color: #f5f5f5;
+    }
+
+      /* Header / Navigation */
+    header {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 30px 0;
+    }
+
+    header a {
+      text-decoration: none;
+      color: #f5f5f5;
+      font-weight: 500;
+      background-color: transparent;
+      border: 1px solid #525151;
+      padding: 10px 25px;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    header a:hover {
+      background-color: #525151;
+      color: #121212;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      padding: 60px;
+    }
+
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 20px;
+    }
+
+    .gallery-item:hover .overlay,
+    .gallery-item:active .overlay {
+      opacity: 1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #888;
+      font-size: 13px;
+    }
+
+    @media (max-width: 768px) {
+      .gallery {
+        padding: 30px 20px;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    
+  <header>
+    <a href="websitecutiee.html">Home</a>
+    <a href="websitecutiee3.html">Contact</a>
+  </header>
+
+  <section class="gallery">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1762390425552-72278bdfa416?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=735" alt="Project 1">
+      <div class="overlay">Urban Cityscape — Modern Architecture Design</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1762390129498-2a88f9714b96?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=750" alt="Project 2">
+      <div class="overlay">Creative Studio Lighting — Interior Aesthetics</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1762390657733-334158341adf?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687" alt="Project 3">
+      <div class="overlay">Outdoor Lifestyle — Natural Photography Concept</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1762390134563-70df5b386b23?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1029" alt="Project 4">
+      <div class="overlay">Product Design — Minimal Black Aesthetic</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. JM Dollesin.</p>
+  </footer>
+
+</body>
+</html>
